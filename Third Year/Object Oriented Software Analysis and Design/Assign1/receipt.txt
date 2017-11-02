@@ -1,0 +1,9 @@
+1001	1 carton of milk	$2.75	Total:	$2.75
+1002	1 tropical Orange	$1.25	Total:	$4.0
+1004	1 fresh red apple	$1.0	Total:	$5.0
+1003	1 bundle of bananas	$4.75	Total:	$9.75
+Total:			$9.75
+tax:			$1.4625001
+GRAND TOTAL:	$11.2125
+payment			$12.25
+change			$1.0375004

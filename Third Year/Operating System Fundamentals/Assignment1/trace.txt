@@ -1,0 +1,60 @@
+execve("./a.out", ["./a.out"], [/* 31 vars */]) = 0
+brk(0)                                  = 0x8f58000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb77ba000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=157176, ...}) = 0
+mmap2(NULL, 157176, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb7793000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\200\230\1\0004\0\0\0"..., 512) = 512
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1516996, ...}) = 0
+mmap2(NULL, 1522204, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb761f000
+mmap2(0xb778d000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16e000) = 0xb778d000
+mmap2(0xb7790000, 10780, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb7790000
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb761e000
+set_thread_area({entry_number:-1, base_addr:0xb761e940, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0 (entry_number:6)
+mprotect(0xb778d000, 8192, PROT_READ)   = 0
+mprotect(0xb77de000, 4096, PROT_READ)   = 0
+munmap(0xb7793000, 157176)              = 0
+fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb77b9000
+write(1, "Enter source file name\n", 23) = 23
+fstat64(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb77b8000
+read(0, "123.txt\n", 1024)              = 8
+write(1, "Enter destination file name\n", 28) = 28
+read(0, "0.txt\n", 1024)                = 6
+open("123.txt", O_RDONLY)               = 3
+open("0.txt", O_WRONLY|O_CREAT|O_EXCL, 0777) = 4
+read(3, "This messa", 10)               = 10
+write(4, "This messa", 10)              = 10
+read(3, "ge is supp", 10)               = 10
+write(4, "ge is supp", 10)              = 10
+read(3, "ose to be ", 10)               = 10
+write(4, "ose to be ", 10)              = 10
+read(3, "coppied fr", 10)               = 10
+write(4, "coppied fr", 10)              = 10
+read(3, "om 123.txt", 10)               = 10
+write(4, "om 123.txt", 10)              = 10
+read(3, " to anothe", 10)               = 10
+write(4, " to anothe", 10)              = 10
+read(3, "r file.\r\nA", 10)             = 10
+write(4, "r file.\r\nA", 10)            = 10
+read(3, "lso it is ", 10)               = 10
+write(4, "lso it is ", 10)              = 10
+read(3, "very nice ", 10)               = 10
+write(4, "very nice ", 10)              = 10
+read(3, "weather ou", 10)               = 10
+write(4, "weather ou", 10)              = 10
+read(3, "tside.\r\n", 10)               = 8
+write(4, "tside.\r\n", 8)               = 8
+read(3, "", 10)                         = 0
+close(4)                                = 0
+close(3)                                = 0
+write(1, "Write from 123.txt to 0.txt has "..., 46) = 46
+exit_group(0)                           = ?
++++ exited with 0 +++

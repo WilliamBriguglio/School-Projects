@@ -1,0 +1,66 @@
+* {
+	text-align: center;
+    background-color: #ededed;
+}
+
+body {
+    font-family: "calibri";
+}
+
+.banner {
+	margin-bottom: 30px;
+}
+
+div * {
+	padding: 0px 10px 0px 0px;
+}
+
+button {
+    background-color: lightgray;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: gray;
+    color: black;
+}
+
+.signup-form {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width : 250px;  
+}
+
+#login_field{
+    margin-bottom: 15px;
+}
+
+#name_error, #password_length_error, #login_error , #password_error, #taken_error, #kitnum_taken_error{
+    display : none;
+	color: red;
+}
+
+#login_error {
+    z-index: 10;
+}
+
+#admin_form {
+    margin: 10px 10px;
+}
+
+#admin_form label{
+    display: inline-block;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+
+#success {
+    color: green;
+    display : none;
+    font-weight: bold;
+}

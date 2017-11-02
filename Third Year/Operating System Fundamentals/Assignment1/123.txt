@@ -1,0 +1,2 @@
+This message is suppose to be coppied from 123.txt to another file.
+Also it is very nice weather outside.

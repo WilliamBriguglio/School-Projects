@@ -1,0 +1,24 @@
+body {
+	background-color: #222;
+	color: #EEE;	
+}
+h1 {
+	text-align: center;
+}
+tr:hover  {
+	background-color: #0F0;
+}
+
+div  {
+	border: 1px solid #EEE;
+    	background-color: lightblue;
+    	padding: 10px 10px 10px px;
+	text-align: center;
+}
+a{
+	padding: 0px 125px 0px 125px;
+	text-align: center;
+}
+.tab{ 
+	margin-left: 40px; 
+}

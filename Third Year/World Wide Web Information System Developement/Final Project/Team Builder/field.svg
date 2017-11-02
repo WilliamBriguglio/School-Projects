@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 449.99983 369.82313"
+   version="1.1"
+   id="svg46"
+   sodipodi:docname="field.svg"
+   inkscape:version="0.92.1 r15371"
+   width="449.99982"
+   height="369.82312">
+  <metadata
+     id="metadata50">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>soccer field vector</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     id="namedview48"
+     showgrid="false"
+     inkscape:zoom="1.0110183"
+     inkscape:cx="318.96134"
+     inkscape:cy="262.77681"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg46"
+     showborder="true"
+     borderlayer="true"
+     inkscape:showpageshadow="false" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#4ca950;stroke:#87df76;stroke-width:1.05px;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{stroke-miterlimit:10;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{fill:none;stroke:#fff;}.cls-2{stroke-width:2.87px;}.cls-3{stroke-width:3.31px;}.cls-4{stroke-width:2.49px;}.cls-5{stroke-width:2.05px;}.cls-6{stroke-width:2.52px;}</style>
+  </defs>
+  <title
+     id="title6">soccer field vector</title>
+  <g
+     id="Layer_1"
+     data-name="Layer 1"
+     transform="matrix(0.80433291,0,0,0.52099505,-0.00520224,-0.00260499)">
+    <polygon
+       class="cls-1"
+       points="63.33,0.53 493,0.53 558.9,709.32 0.58,709.32 "
+       id="polygon8"
+       style="fill:#4ca950;stroke:#87df76;stroke-width:1.04999995px;stroke-miterlimit:10" />
+    <polygon
+       class="cls-2"
+       points="72.98,15.32 483.5,15.32 546.47,692.53 13.02,692.53 "
+       id="polygon10"
+       style="fill:none;stroke:#ffffff;stroke-width:2.86999989px;stroke-miterlimit:10" />
+    <rect
+       class="cls-3"
+       x="200.62"
+       y="693.34003"
+       width="158.23"
+       height="11.97"
+       id="rect12"
+       style="fill:none;stroke:#ffffff;stroke-width:3.30999994px;stroke-miterlimit:10" />
+  </g>
+  <g
+     id="LR"
+     transform="matrix(0.80433291,0,0,0.52099505,0.70438262,-0.00260499)">
+    <rect
+       class="cls-4"
+       x="124.89"
+       y="546.02002"
+       width="321.67001"
+       height="146.50999"
+       id="rect15"
+       style="fill:none;stroke:#ffffff;stroke-width:2.49000001px;stroke-miterlimit:10" />
+  </g>
+  <g
+     id="BC"
+     transform="matrix(0.80433291,0,0,0.52099505,0.70438262,-0.00260499)">
+    <path
+       class="cls-4"
+       d="m 383.68,586.14 a 96,96 0 0 0 -144.39,0.14 c 48.13,-0.07 96.26,-0.81 144.39,-0.14 z"
+       transform="translate(-26.26,-41.08)"
+       id="path18"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ffffff;stroke-width:2.49000001px;stroke-miterlimit:10" />
+  </g>
+  <g
+     id="middle_line"
+     data-name="middle line"
+     transform="matrix(0.80433291,0,0,0.52099505,0.70438262,-0.00260499)">
+    <line
+       class="cls-4"
+       x1="45.790001"
+       y1="326.91"
+       x2="511.59"
+       y2="326.91"
+       id="line21"
+       style="fill:none;stroke:#ffffff;stroke-width:2.49000001px;stroke-miterlimit:10" />
+  </g>
+  <g
+     id="SR"
+     transform="matrix(0.80433291,0,0,0.52099505,0.70438262,-0.00260499)">
+    <rect
+       class="cls-4"
+       x="165.5"
+       y="633.57001"
+       width="239.45"
+       height="58.959999"
+       id="rect24"
+       style="fill:none;stroke:#ffffff;stroke-width:2.49000001px;stroke-miterlimit:10" />
+    <rect
+       class="cls-5"
+       x="173.09"
+       y="56.599998"
+       width="264.94"
+       height="120.67"
+       transform="rotate(-179.91,292.4159,96.405397)"
+       id="rect26"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <path
+       class="cls-5"
+       d="m 244.6,177.73 a 79.08,79.08 0 0 0 118.93,0.07 c -39.65,0 -79.29,0.54 -118.93,-0.07 z"
+       transform="translate(-26.26,-41.08)"
+       id="path28"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <rect
+       class="cls-5"
+       x="209"
+       y="56.599998"
+       width="197.22"
+       height="48.560001"
+       transform="rotate(-179.91,294.46758,60.348763)"
+       id="rect30"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <circle
+       class="cls-5"
+       cx="276.76001"
+       cy="327.35999"
+       r="67.900002"
+       id="circle32"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <path
+       class="cls-5"
+       d="M 54.66,734.42 C 56.25,715.78 39.27,720.94 39.27,720.94"
+       transform="translate(-26.26,-41.08)"
+       id="path34"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <path
+       class="cls-5"
+       d="m 98.35,69.31 c 18,5 16.08,-12.64 16.08,-12.64"
+       transform="translate(-26.26,-41.08)"
+       id="path36"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <path
+       class="cls-5"
+       d="m 494.93,57.75 c 0,18.71 16.5,12.1 16.5,12.1"
+       transform="translate(-26.26,-41.08)"
+       id="path38"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+    <path
+       class="cls-5"
+       d="M 571.92,720.65 C 554,715.26 555.56,732.94 555.56,732.94"
+       transform="translate(-26.26,-41.08)"
+       id="path40"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ffffff;stroke-width:2.04999995px;stroke-miterlimit:10" />
+  </g>
+  <g
+     id="SMALLEST_REC"
+     data-name="SMALLEST REC"
+     transform="matrix(0.80433291,0,0,0.52099505,0.70438262,-0.00260499)">
+    <rect
+       class="cls-6"
+       x="214.82001"
+       y="6.8200002"
+       width="129.84"
+       height="8.5"
+       id="rect43"
+       style="fill:none;stroke:#ffffff;stroke-width:2.51999998px;stroke-miterlimit:10" />
+  </g>
+</svg>

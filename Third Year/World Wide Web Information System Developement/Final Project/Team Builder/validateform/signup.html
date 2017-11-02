@@ -1,0 +1,98 @@
+<?php
+	session_start();
+	$_SESSION['message']
+	$mysqli = new mysqli('localhost', 'root', 'mypass123', 'accounts');
+
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+		if ($_POST['password'] == $_POST['password_repeat']){
+
+			$username = $mysqli->real_escape_string($_POST['username']);
+			$password = md5($_POST['password']);
+
+			$_SESSION['username'] = $username;
+
+			$sql = "INSERT INTO users (username, password) VALUES ('$username','$password')";
+
+			if ($mysqli->query($sql) === true){
+				$_SESSION['message'] = 'Registration Succesful!';
+				header("location: welcome.php");
+			} else {
+				$_SESSION['message'] = "User could not be added";
+			}
+		}
+	}
+?>
+
+<html>
+
+	<head>
+		<title>Sign Up</title>
+    	<link rel="stylesheet" type="text/css" href="home.css" />
+	</head>
+
+	<body>
+		<div class = "banner">
+			<img src="images/banner.png">
+		</div>
+
+		<div class="signup-form">
+			<form method="POST" action="index.html" onsubmit="return Validate()" >
+	            <label> Username </label>
+	            <input type="text" placeholder="Enter username" id="username" name="username" required>
+	            <br>
+
+	        	<p style="font-size: 12px">*must be <= 10 characters</p>
+
+	            <label> Password </label>
+	            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+	            <br>
+
+	            <label> Repeat Password </label>
+	            <input type="password" id="password_repeat" placeholder="Repeat Password" name="password_repeat" required>
+
+
+		    	<p id="name_error" style="visibility:hidden" >ERROR: INVALID USERNAME</p>
+		    	<p id="password_error" style="visibility:hidden">ERROR: REPEAT PASSWORD IS NOT SAME AS PASSWORD</p>
+
+		    	<div id="submit_button">
+		    		<input type="submit" value="REGISTER"/>
+		    	</div>
+			</form>
+		</div>
+
+		<script type="text/javascript">
+		/*
+		This script adds an event listener to the submit button which checks that the username is <= 10 chars and that both password entries are the same before creating an account for the user */
+
+			var submitButton = document.getElementById("submit_button");
+
+			submitButton.addEventListener("click", Validate);
+
+			function Validate(evt){
+				var username = document.getElementById("username");
+				var password = document.getElementById("password");
+				var password_repeat = document.getElementById("password_repeat");
+
+				//CHECK USERNAME
+				if (username.value.length > 10){ 
+					document.getElementById("name_error").style.visibility = "visible";
+					return false;
+				} else {
+					document.getElementById("name_error").style.visibility = "hidden";
+				}
+				//CHECK PASSWORD IS THE SAME
+				if (password.value != password_repeat.value){
+					document.getElementById("password_error").style.visibility = "visible";
+					return false;
+				} else {
+					document.getElementById("password_error").style.visibility = "hidden";
+				}
+				
+				return true;
+			} 
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+<html>
+	<head>
+		<title>Squad Builder</title>
+    	<link rel="stylesheet" type="text/css" href="home.css" />
+	</head>
+
+	<body>
+
+		<div class = "banner">
+			<img src="images/banner.png">
+		</div>
+
+		 <div class="login">
+		 	<form method="POST" action="login.html" onsubmit="return LoginValidation()" >
+
+			 	<div style="margin-bottom: 15px">
+				    <label><b>Username</b></label>
+				    <input type="text" placeholder="Enter Username" name="username" required>
+				   </div>
+
+			    <br>
+			    <div style="margin-bottom: 15px">
+				    <label><b>Password</b></label>
+				    <input type="password" placeholder="Enter Password" name="password" required>
+				</div>
+
+			    <br>
+
+			    <button id="loginButton" type="submit">LOG IN</button>
+			    <button onclick="location.href='signup.php'" type="submit">Sign Up</button>
+			</form>
+		  </div>
+
+		  <script type="text/javascript">
+
+		  	var submitButton = document.getElementById("loginButton");
+		  	submitButton.addEventListener(click, LoginValidation);
+
+		  	function LoginValidation(){
+		  		//check with database that the info is registered first
+		  		return true;
+		  	}
+
+
+		  </script>
+
+	</body>
+</html>

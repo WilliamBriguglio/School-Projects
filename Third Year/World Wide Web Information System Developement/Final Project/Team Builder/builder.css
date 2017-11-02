@@ -1,0 +1,286 @@
+:root{
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto; /*horizaontally center page*/
+	justify-content: center;
+}
+
+body {
+	background-color: #ededed;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	font-family: "calibri";
+	text-align: center;
+}	
+
+#logo {
+	width: 600px;
+	height: 215px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav{
+	background-color: #2C4058;
+	border-radius:	0.5em;
+	border-bottom: solid #1f2c3d;
+	padding: 0.25ex 1em 0.25ex 1em;
+	list-style-type: none;
+}
+
+nav > ul{
+	display: flex;
+	list-style-type: none;
+	padding: 0em;
+}
+
+
+nav > ul > li + li {
+	margin-left: 1em;
+}
+
+nav > ul > #nav-right {
+	margin-left: auto;
+}
+
+nav > ul > li > a {
+	padding: 0.5em 1em;
+	border-radius: 0.25em;
+	border-bottom: solid #d63200;
+	color: #000;
+	background-color: #FF5621;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #ffcd00;
+	border: solid #FF5621;
+	border-bottom: solid #d63200;
+}
+
+#builder{
+	display: flex;
+}
+
+
+#XI{
+	flex: 1;
+	position: relative; 
+	width: 100%;
+	height: 0;
+	padding: 0;
+	padding-bottom: 41%;
+}
+
+#XIcontainer{
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#field{
+	background-image: url("field.svg"), none;
+    background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	height: 100%; 
+	width: 100%; 
+	left: 0; 
+	top: 0;
+}
+
+#formation{
+	height: 200px;
+	width: 200px;
+	background-color: transparent;
+	z-index: 10;
+}
+
+.button{
+	margin: 15px;
+	background-color: #FF5621;
+	color: #FFF;
+	font-size: 2em;
+	text-align: center;
+	text-shadow: 3px 2px black;
+	font-weight: bold;
+	border-radius: 0.25em;
+	border-bottom: solid #d63200;
+}
+
+.button:hover{
+	background-color: #ffcd00;
+	border: solid #FF5621;
+	border-bottom: solid  #d63200;
+}	
+
+.line {
+	flex: 1;
+	display: flex;
+	width: 100%;
+	z-index: 10;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer{
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	padding: 0.25ex 1em 0.25ex 1em;
+	height: 2.5em;
+	background-color: #2C4058;
+	border-radius: 0.5em;
+	border-bottom: solid #1f2c3d;
+}
+
+.footBut{				/**rules for buttons on footer**/
+	padding: 0.5em 1em;
+	border-radius: 0.25em;
+	border-bottom: solid #d63200;
+	color: #000;
+	background-color: #FF5621;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-decoration: none;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.footBut:hover{
+	background-color: #ffcd00;
+	border: solid #FF5621;
+	border-bottom: solid #d63200;
+}	
+
+.player {	/**rules for player slots**/
+	height: 85px;
+	width: 85px;
+	margin: auto;
+	background: url(generic.png);
+	object-fit: contain;
+	border-radius: 15px;
+	justify-content: center;
+}
+
+.player:hover{
+	background: url(genericHov.png);
+}
+
+.playerpic{
+	height: 85px;
+	width: 85px;
+}
+
+#selector{ /**rules for where the squad list will appear**/
+	flex: 1;
+	position: relative; 
+	width: 100%;
+}
+
+#selectorContainer{ /**rules for where the squad list will appear**/
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+#interface{ /**rules for where the squad choice will appear**/
+	height: 50%;
+	width: 50%;
+	background-color: #FF5621;
+	border-radius: 0.25em;
+	border-bottom: solid #d63200;
+	display: flex;
+	object-fit: contain;
+	}
+
+#ArseBut{
+	flex: 1;
+	width: 50px;
+	object-fit: contain;
+	padding: 0;
+	margin: 5px;
+	border-radius: 0.25em;
+}
+
+#JuveBut{
+	flex: 1;
+	width: 50px;
+	object-fit: contain;
+	padding: 0;
+	margin: 5px;
+	border-radius: 0.25em;
+}
+
+#JuveBut:not(.no-hover):hover{
+	background-color: #ffcd00;
+	
+}
+
+#ArseBut:not(.no-hover):hover{
+	background-color: #ffcd00;
+}
+
+#teamSheet{ /**rules for where the squad list will appear**/
+	height: 98%;
+	width: 98%;
+	border-radius: 0.25em;
+	border: solid #9c9c9c;
+	overflow-y: scroll;
+}
+
+.teamName{
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#players{ /**rules for player list**/
+	width: 100%;
+	height: 90%;
+	justify-content: centre;
+}
+
+.pt{ /**rules for each row in player list**/
+	justify-content: center;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#at{
+	color: #FFFFFF;
+}
+
+tr:not(#head):nth-child(odd) { /**rules for formating table**/
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+tr:hover:not(#head){ 
+	background-color: #ffcd00;
+}
+
+#username_topbar{ 
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
