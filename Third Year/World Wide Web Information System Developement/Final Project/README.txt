@@ -10,10 +10,10 @@ The parts I am reposonsible for are:
 -field.svg
 -genericHov.png
 -generic.png
--I also collected all the Arsenal and Juventus Playet pictures
+-I also collected all the Arsenal and Juventus Playerpictures
 
 You can visit the site by clicking the following URL:
 
 http://334.project.groupz.myweb.cs.uwindsor.ca/index.php
 
-It still works as of Nov. 2nd 2017 although the login page (which I did not code myself) is a bit buggy. 
+It still works as of Nov. 2nd 2017 although the login page (which I did had no role in implementing) is a bit buggy. 
