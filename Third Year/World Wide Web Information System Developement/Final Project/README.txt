@@ -16,4 +16,4 @@ You can visit the site by clicking the following URL:
 
 http://334.project.groupz.myweb.cs.uwindsor.ca/index.php
 
-It still works as of Nov. 2nd 2017 although the login page (which I did had no role in implementing) is a bit buggy. 
+It still works as of Nov. 2nd 2017 although the login page (which I had no part in implementing) is a bit buggy. 
