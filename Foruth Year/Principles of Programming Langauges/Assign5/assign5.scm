@@ -1,0 +1,42 @@
+#lang racket
+(define (result L)
+  (r_node (r_edges (edges L)) (list))
+)
+
+(define (edges L)
+  (if (> (length L) 0)
+    (append (edges_aux (car (car L)) (cdr (car L)))  (edges (cdr L)))
+    (list)
+  )
+)
+
+(define (edges_aux v L)
+  (if (> (length L) 0)
+    (cons (list v (car L))  (edges_aux v (cdr L)))
+    (list)
+  )
+)
+
+(define (r_edges L)
+  (if (> (length L) 0)
+    (cons (reverse (car L))  (r_edges (cdr L)))
+    (list)
+  )
+)
+
+(define (r_node L RL)
+  (if (> (length L) 0)
+    (r_node (cdr L) (r_node_aux (car L) RL))
+    RL
+  )
+)
+
+(define (r_node_aux L RL)
+  (if (> (length RL) 0)
+    (if (eq? (car (car RL)) (car L))
+        (cons (append (car RL) (cdr L))  (cdr RL))
+        (cons (car RL) (r_node_aux L (cdr RL)))
+    )
+    (cons L RL)
+  )
+)

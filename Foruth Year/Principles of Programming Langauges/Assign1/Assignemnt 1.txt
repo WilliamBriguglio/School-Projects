@@ -1,0 +1,20 @@
+graph([[a, b, c], [b, c, e], [c, b, a]]).
+
+rEdge([Y, X]):-	%[Y, X] is a reversed edge if there is a sub list in S where X is the Head and Y is a member of the tail 
+    graph(S),
+    member([X|T], S),
+    member(Y, T).
+
+rNode(Y, R):-	%R is a reversed node if R is the result of appending all the vertices X, with a reverse edge [Y,X], to Y
+	findall(X, rEdge([Y,X]), L),
+	append([Y],L,R).
+
+rNodes(R):-		%R is a list of all reverse nodes
+    findall(X,(graph(S), member(X, S)), L),			%L is a list of all nodes is graph S
+	findall(X, (member(Y, L), member(X, Y)), L2),	%L2 is a list of all verticies in all nodes
+	sort(L2, L3),									%L3 is L2 with the duplicates removed
+    member(Z, L3), 									%Z is one vertex in grph S 
+    rNode(Z, R).									%R is the reverse node with vertex Z as its origin
+
+result(R):-	%R is a list of all reversenodes
+	findall(X, rNodes(X), R).

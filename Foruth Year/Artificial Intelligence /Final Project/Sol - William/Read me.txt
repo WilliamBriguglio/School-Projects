@@ -1,0 +1,13 @@
+Scores: contains text files which contain the confusion matrix and best params for all the different numbers of features for linear SVM T4 vs. Rest and linear SVM T2 vs. T3
+
+Linear_T2vT3: contains the 40 features used to obtain a 91.6% precision with the linear kernel SVM classifying T2 vs. T3
+
+Linear_T4: contains the 14 features used to obtain a 100.00% precision with the linear kernel SVM classifying T5 vs. rest
+
+FeatSel&SVM_linear: The code used to load and clean data, as well as feature select and classify for SVM_linear for the first 4 classification schemes
+
+FeatSel&SVM_linear_T2vT3: The code used to load and clean data, as well as feature select and classify for SVM_linear for the 5th classification scheme
+
+FeatSel&SVM_rbf_T2vT3: The code used to load data, as well as feature select and classify for SVM_rbf for the 5th classification scheme
+
+SelLabels: the 487 labels, i.e the Path-T-Stage of the 487 patients

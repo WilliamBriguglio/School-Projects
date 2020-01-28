@@ -1,0 +1,67 @@
+graph([[a,b,c,d,f],[b,a,c,e,f],[c,a,b,d,e],[d,a,c,e,f],[e,b,c,d,f],[f,a,b,d,e]]).
+colors(["blue", "red", "green","yellow"]).
+
+color(X):- %True if X is in the provided list of colors
+    colors(Y),
+    member(X, Y).
+
+node(X):-%True if X is in the provided graph
+	graph(Y),
+    member(X, Y).
+
+vertex_aux(X):- %True if X is an element of a node						
+    node(Y),
+	member(X, Y).
+
+vertexs_aux(R):- %True if R is a list of all elements of all the nodes, with no duplicates
+    findall(X, vertex_aux(X), Y),
+	sort(Y, R).
+
+vertex(X):-	%True if X is an element of the list Y that satisfies vertexs_aux(Y)
+	vertexs_aux(Y),
+    member(X, Y).
+
+edge_aux([X,Y]):- %true if X is the head and Y is an element of the tail of some node [X|T]
+    node([X|T]),
+	member(Y, T).
+
+edges_aux(R):-	%True if R is a list of all [X,Y] which satisfy edge_aux(X)
+	findall(X, edge_aux(X), R).
+
+edges_aux2([[X, Y]], [[X, Y]]).	%Base case
+
+edges_aux2([[X, Y]|T], R):-	%True if R is a list [[X,Y]|T] such that no two elements [A,B],[C,D] exist where A=D and B=C
+	edges_aux2(T, R2),
+	delete(R2, [Y, X], R3),
+	append([[X,Y]],R3, R).
+
+edges(R):-	%R is a list such that no two elements are revereses of eachother
+	edges_aux(X),
+	edges_aux2(X, R).
+
+edge(X,Y):-	%True if X, Y form an a edge
+	edges(Z),
+	member([X, Y], Z).
+	
+
+adj(X,Y):-edge(X,Y). %X, Y are adjacent if there is an edge [X, Y] 
+adj(Y,X):-edge(X,Y). %or an edge [Y, X]
+
+coloring([[V,C]]) :- %True if [V,C] is any pair such that C is a color and V is a origin of some edge
+    	edge(V,_),
+        color(C).
+
+coloring([[V,C]|T]) :- %True if coloring(T) is true, and V hasn't been used in T, and C is not an adjacent color
+        coloring(T),
+    	vertex(V),
+    	\+ member([V,_], T),
+		findall(X, (member([Y,X], T), adj(Y,V)), L),
+    	color(C),
+    	\+ member(C, L).
+
+result(X):-	%True if X is a coloring that is the same length as the list of vertices ( i.e. one color assignment per vertex)
+        vertexs_aux(Y),
+		length(Y, Len), 
+        coloring(X),
+        length(X, Len).
+    	
